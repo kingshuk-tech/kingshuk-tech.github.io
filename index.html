@@ -5,57 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: white;
-        }
+        body
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            padding: 20px;
-            background: rgba(0,0,0,0.4);
-        }
+/* BODY WITH MOVING GRADIENT */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
 
-        nav {
-            background: black;
-            padding: 10px;
-        }
+    background: linear-gradient(-45deg, #0b5394, #162447, #1f4068, #1b1b2f);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 16px;
-        }
+/* GRADIENT ANIMATION */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
-        nav a:hover {
-            color: yellow;
-        }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
 
-        .content {
-            padding: 40px;
-        }
+/* NAVIGATION */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+}
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background: yellow;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
 
-        button:hover {
-            background: orange;
-        }
+nav a:hover {
+    color: yellow;
+}
 
-        footer {
-            padding: 15px;
-            background: rgba(0,0,0,0.4);
-            margin-top: 30px;
-        }
+/* MAIN CONTENT BOX */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+}
+
+/* HEADINGS */
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+/* ARTICLE LIST */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: yellow;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 40px;
+}
+
     </style>
 </head>
 
