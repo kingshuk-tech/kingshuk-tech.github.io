@@ -1,120 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Kingshuk Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
-        body
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* BODY WITH MOVING GRADIENT */
-body {
-    font-family: Arial, sans-serif;
-    color: white;
+        /* BODY WITH MOVING GRADIENT */
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(-45deg, #0b5394, #162447, #1f4068, #1b1b2f);
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease infinite;
+        }
 
-    background: linear-gradient(-45deg, #0b5394, #162447, #1f4068, #1b1b2f);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-}
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-/* GRADIENT ANIMATION */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 40px 20px;
-}
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
 
-/* NAVIGATION */
-nav {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    text-align: center;
-}
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    transition: 0.3s;
-}
+        /* NAVIGATION */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
 
-nav a:hover {
-    color: yellow;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
 
-/* MAIN CONTENT BOX */
-.content {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 12px;
-}
+        nav a:hover {
+            color: yellow;
+        }
 
-/* HEADINGS */
-h1, h2 {
-    margin-bottom: 20px;
-}
+        /* CONTENT AREA */
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+        }
 
-h2 {
-    margin-top: 30px;
-}
+        h2 {
+            margin-bottom: 25px;
+        }
 
-/* ARTICLE LIST */
-ul {
-    list-style: none;
-    margin-top: 15px;
-}
+        /* ARTICLE CARDS */
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
 
-ul li {
-    margin-bottom: 15px;
-}
+        .card:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.12);
+        }
 
-ul li a {
-    color: #ffd700;
-    text-decoration: none;
-    font-size: 18px;
-}
+        .card h3 {
+            margin-bottom: 10px;
+        }
 
-ul li a:hover {
-    text-decoration: underline;
-}
+        .card p {
+            margin-bottom: 10px;
+        }
 
-/* BUTTON */
-button {
-    padding: 12px 25px;
-    font-size: 16px;
-    background: yellow;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-}
+        .card a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-button:hover {
-    background: orange;
-}
+        .card a:hover {
+            text-decoration: underline;
+        }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 40px;
-}
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            margin-top: 40px;
+        }
 
     </style>
 </head>
@@ -122,40 +122,54 @@ footer {
 <body>
 
 <header>
-    <h1>Welcome to Kingshuk Tech 🚀</h1>
+    <h1>Kingshuk Tech 🚀</h1>
+    <p>Learn Computer Technology in Simple Language</p>
 </header>
-    <nav>
+
+<nav>
     <a href="index.html">Home</a>
     <a href="privacy-policy.html">Privacy Policy</a>
     <a href="terms.html">Terms</a>
-    </nav>
-
+</nav>
 
 <div class="content">
-    <h2>Hello!</h2>
-    <p>This is my official website hosted on GitHub Pages.</p>
-    <button onclick="window.location.href='technology.html'">Click Me</button>
-    <p id="message"></p>
     <h2>Latest Articles</h2>
-<ul>
-    <li><a href="what-is-computer.html">What is a Computer?</a></li>
-    <li><a href="what-is-html.html">What is HTML?</a></li>
-    <li><a href="hardware-vs-software.html">Hardware vs Software</a></li>
-    <li><a href="what-is-css.html">What is CSS?</a></li>
-    <li><a href="what-is-javascript.html">What is JavaScript?</a></li>
-</ul>
+
+    <div class="card">
+        <h3>What is a Computer?</h3>
+        <p>Learn how computers work and why they are important in modern life.</p>
+        <a href="what-is-computer.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <h3>What is HTML?</h3>
+        <p>Understand the structure of web pages using HTML.</p>
+        <a href="what-is-html.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <h3>What is CSS?</h3>
+        <p>Learn how CSS makes websites beautiful and responsive.</p>
+        <a href="what-is-css.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <h3>What is JavaScript?</h3>
+        <p>Discover how JavaScript makes websites interactive.</p>
+        <a href="what-is-javascript.html">Read More</a>
+    </div>
+
+    <div class="card">
+        <h3>Hardware vs Software</h3>
+        <p>Understand the difference between hardware and software.</p>
+        <a href="hardware-vs-software.html">Read More</a>
+    </div>
+
 </div>
 
 <footer>
-    <p>© 2026 Kingshuk Tech | All Rights Reserved</p>
+    © 2026 Kingshuk Tech | All Rights Reserved
 </footer>
-
-<script>
-    function showMessage() {
-        document.getElementById("message").innerHTML =
-        "🔥 JavaScript is working successfully!";
-    }
-</script>
 
 </body>
 </html>
